@@ -1,32 +1,31 @@
-body {
+body{
     background-image: url('picture/bg.jpg');
     background-repeat: no-repeat;
-    background-size: 1600px;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
+    
 }
 
-header {
+header{
     position: relative;
     padding: 0 2rem;
 }
 
-.navbar a {
+.navbar a{
     color: aliceblue;
-    text-decoration: none;
+    text-decoration: none; 
 }
 
-.navbar ul {
+.navbar ul{
     list-style-type: none;  
+    
 }
 
-.logo {
+.logo{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 40px;
+    transition: 0.5s ease;
 }
 
-.navbar {
+.navbar{
     width: 100%;
     height: 60px;
     margin: 0px;
@@ -34,19 +33,21 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 5px;
+    animation: drop 1.5s ease;
 }
 
-.navbar .links {
+.navbar .links{
     display: flex;
     gap: 2rem;
     box-sizing: border-box;
     font-size: 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.5s ease;
 }
 
-.action-btn {
+.action-btn{
     background-color: darkorange;
-    position: static;
+    position:static;
     color: aliceblue;
     padding: 0.5rem 1rem;
     border: none;
@@ -58,51 +59,145 @@ header {
     justify-content: right;
     font-size: 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.5s ease;
 }
 
-.action-btn:hover {
+.action-btn:hover{
     scale: 1.1;
     transition-duration: 0.2s;
     color: aliceblue;    
 }
 
-.links li:hover {
-    transition-duration: 0.2s
-}
-.links li:hover a {
-color: darkorange;
+.links li:hover{
+    transition-duration: 0.2s;
+    scale: 1.1;
 }
 
-hr {
-border: none;
-border-top: 1px solid #ccc;
-margin-top: 0px;
+.logo{
+    animation: drop 1.5s ease;
+
 }
 
-.container {
-max-width: 800px;
-margin: 0 auto;
-padding: 2rem;
-background-color: #333;
-color: #fff;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.logo:hover{
+    transition-duration: 0.5s;
+    scale: 1.2;
 }
-  
-.chead {
-    font-size: 2rem;
-    font-weight: bold;
+
+.container{
+    margin-top: 40px;
+    margin-left: 20%;
+    background-color: rgba(37, 36, 36, 0.895);
+    color: rgba(255, 255, 255, 0.968);
+    border-radius: 10px;
+    width: 60%;
+    justify-content: center;
+    padding: 20px;
+    font-family: serif ;
+}
+
+.chead{
+    text-emphasis: bold;
+    font-size: 40px;
     text-align: center;
-    margin-bottom: 1rem;
-}
-  
-
-.intro {
-font-size: 1.1rem;
-line-height: 1.5;
-margin-bottom: 1rem;
-text-align: justify;
 }
 
-.intro p:last-child {
-margin-bottom: 0;
+.intro{
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.contributers{
+    margin: 10px 3% 0px 1.8%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    width: 95%;
+    animation: drop 1.5s ease;
+    margin-bottom: 45px;
+    
+}
+
+.card{
+    width: 30%;
+    max-width: 400px;
+    min-width: 300px;
+    border: 1px rgb(255, 255, 255) solid;
+    padding: 10px;
+    position: relative;
+    border-radius: 20px;
+    margin: 20px 10px 10px 10px;
+    animation: drop 1.5s ease;
+    background-color: rgba(0, 0, 0, 0.462);
+    color: white;
+    transition: 0.5s ease;
+    text-align: center;
+    scale: 0.8;
+}
+
+.card img{
+    margin: 10px;
+}
+
+
+.card:hover{
+    scale: 0.85;
+    transition: 0.5s ease;
+}
+
+.card-title{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: serif;
+    font-size: 30px;
+    color: rgb(189, 225, 255);
+}
+
+.card-body{
+    padding: 5px;
+}
+
+.card-body-link{
+    display: flex;
+    text-align: center;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    bottom: 0px;
+}
+
+.list-group-item{
+    text-align: center;
+    width: 30%;
+}
+
+.list-group-item img{
+    width: 50px;
+}
+
+.card-body-link a{
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 5px 10px 5px 10px;
+    height: 100%;
+}
+
+.list-group{
+    display: flex;
+    justify-content: center space-between;
+}
+
+.card-body-link a:hover{
+    background-color: rgb(189, 225, 255);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    scale: 1.05;
+    transition-duration:0.2s ;
+}
+
+ul{
+    list-style: none;
 }
