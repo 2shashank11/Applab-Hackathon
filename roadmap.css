@@ -327,3 +327,18 @@ border-right: 7px solid #333C42;
   text-align: right;
 }
 }
+
+.conclusion-box{
+  width: 90%;
+  background: rgba(0, 0, 0, 0.392);
+  align-items: center;
+}
+
+.conclusion-box  h2{
+  color: darkorange;
+}
+
+.conclusion-box p{
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
