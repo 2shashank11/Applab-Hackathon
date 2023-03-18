@@ -1,7 +1,6 @@
 body{
     background-image: url('picture/bg.jpg');
     background-repeat: no-repeat;
-    background-size: 1600px;
 }
 
 header{
@@ -132,27 +131,32 @@ header{
 
 .allskills{
     margin: 0px 3% 0px 1.8%;
+    border-radius: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    background: rgba(194, 171, 209,50);  
+    
     padding: 10px;
     width: 95%;
     animation: drop 1.5s ease;
-
-
+    
 }
 
 .card{
     width: 18rem;
-    border: 3px black solid;
+    border: 3px rgb(255, 255, 255) solid;
     padding: 10px;
     position: relative;
-    border-radius: 5px;
-    margin: 10px;
+    border-radius: 10px;
+    margin: 20px 10px 10px 10px;
     animation: drop 1.5s ease;
+    backdrop-filter: blur(5px);
+    color: white;
+}
 
+.card a{
+    color: aquamarine;
 }
 
 .card img{
@@ -161,7 +165,6 @@ header{
     border-radius: 20px;
 }
 
-.card
 
 .card:hover{
     width: 16rem;
@@ -172,7 +175,10 @@ header{
     text-align: center;
     font-family: serif;
     font-size: xx-large;
+    border-radius: 20px;
+    color: rgb(223, 192, 17);
 }
+
 
 
 @keyframes  drop{
