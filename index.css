@@ -1,0 +1,198 @@
+body{
+    background-image: url('picture/bg.jpg');
+    background-repeat: no-repeat;
+}
+
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar a{
+    color: aliceblue;
+    text-decoration: none;
+    
+
+}
+
+.navbar ul{
+    list-style-type: none;  
+}
+
+.logo{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    margin: 0px;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    animation: drop 1.5s ease;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.action-btn{
+    background-color: darkorange;
+    position:static;
+    color: aliceblue;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    justify-content: right;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.action-btn:hover{
+    scale: 1.1;
+    transition-duration: 0.2s;
+    color: aliceblue;    
+}
+
+.links li:hover{
+    transition-duration: 0.2s;
+    scale: 1.1;
+}
+
+.logo{
+    animation: drop 1.5s ease;
+
+}
+
+.logo:hover{
+    transition-duration: 0.5s;
+    scale: 1.2;
+}
+
+.container{
+    margin-left: 10%;
+    display: flex;
+    margin-top: 60px;
+    color: aliceblue;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    padding: 20px;
+    align-items: right;
+    flex-wrap: wrap;
+    animation: drop 1.5s ease;
+
+
+}
+
+.chead{
+    color: aliceblue;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 80px;
+    padding-top: 35px;
+    padding-right: 40px;
+    animation: drop 1.5s ease;
+
+    
+}
+
+.intro{
+    color: aliceblue;
+    font-size: 20px;
+    justify-content: left;
+    padding-right: 40px;
+    max-width: 500px;
+    min-width: 100px;
+    animation: drop 1.5s ease;
+
+}
+
+.moto{
+    font-size: 30px;
+}
+
+.second-heading{
+    font-size: xx-large;
+    text-align: center;
+    color: white;
+    animation: drop 1.5s ease;
+
+}
+
+.allskills{
+    margin: 0px 3% 0px 1.8%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    padding: 10px;
+    width: 95%;
+    animation: drop 1.5s ease;
+    
+}
+
+.card{
+    width: 18rem;
+    border: 3px rgb(255, 255, 255) solid;
+    padding: 10px;
+    position: relative;
+    border-radius: 10px;
+    margin: 20px 10px 10px 10px;
+    animation: drop 1.5s ease;
+    backdrop-filter: blur(5px);
+    color: white;
+}
+
+.card a{
+    color: aquamarine;
+}
+
+.card img{
+    padding: 10px;
+    max-width: 90%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 8px #888888;
+}
+
+
+.card:hover{
+    width: 16rem;
+    transition: width 0.2 ease-in;
+}
+
+.card-title{
+    text-align: center;
+    font-family: serif;
+    font-size: xx-large;
+    border-radius: 20px;
+    color: rgb(223, 192, 17);
+}
+
+.card-body{
+    text-align: center;
+    justify-content: space-around;
+}
+
+
+@keyframes  drop{
+    0%{
+        opacity: 0;
+        transform: translateY(-80px)
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
